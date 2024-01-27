@@ -14,7 +14,7 @@ import re
 #         difference = int(difference.days)+1
 #         print(f"{difference}")
 #     except Exception:
-#         pass
+#         return "Неправильний формат дати. Використовуйте 'РРРР-ММ-ДД'"
 # get_days_from_today("2024-01-26")
 
 #                                      Домашне завдання №2                        #
