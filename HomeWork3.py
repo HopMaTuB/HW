@@ -6,29 +6,29 @@ import re
 
 #                                      домашне завдання №1                        #   
 
-def get_days_from_today():
-    user_date = input(f"Ввеідть будь-яку дату в форматі 'РРРР.ММ.ДД': ")
-    try:
-        user_date = datetime.strptime(user_date,"%Y.%m.%d")
-        now = datetime.today()
-        difference = user_date - now
-        difference = int(difference.days)+1
-        print(f"Різниця: {difference} днів")
-    except Exception:
-        print(f"Неправильний формат введення дати!")
-get_days_from_today()
+# def get_days_from_today():
+#     user_date = input(f"Ввеідть будь-яку дату в форматі 'РРРР.ММ.ДД': ")
+#     try:
+#         user_date = datetime.strptime(user_date,"%Y.%m.%d")
+#         now = datetime.today()
+#         difference = user_date - now
+#         difference = int(difference.days)+1
+#         print(f"Різниця: {difference} днів")
+#     except Exception:
+#         print(f"Неправильний формат введення дати!")
+# get_days_from_today()
 
 #                                      Домашне завдання №2                        #
 
-def get_numbers_ticket(min, max, quantity):   
+def get_numbers_ticket(min, max, quantity= 6):   
     try: 
         min >= 1 and max <= 1000
         lottery_list = random.sample(range(min, max), quantity)
         lottery_list.sort()
         return print(f"Виграшна комбінація: {lottery_list}")
     except Exception:
-        return
-get_numbers_ticket(min,max,quantity=6)
+        print()
+get_numbers_ticket(min=13,max=14,quantity=6)
         
 
 #                                      Домашне завдання №3                        #
