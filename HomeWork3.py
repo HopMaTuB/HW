@@ -10,12 +10,14 @@ import re
 #     now = datetime.today()
 #     try:
 #         date = datetime.strptime(date,"%Y-%m-%d")
-#         difference = date - now
-#         difference = int(difference.days)+1
-#         print(f"{difference}")
 #     except Exception:
 #         return "Неправильний формат дати. Використовуйте 'РРРР-ММ-ДД'"
-# get_days_from_today("2024-01-26")
+    
+#     difference = date - now
+#     difference = int(difference.days)+1
+#     return difference
+
+# get_days_from_today()
 
 #                                      Домашне завдання №2                        #
 
